@@ -1,0 +1,186 @@
+/* UPDATED - MARCH 21ST, 2018 */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "karla", sans-serif;
+	color: #78909C;
+	line-height: normal;
+}
+
+a {
+	transition: all 0.5s linear;
+}
+
+a:link, a:visited {
+	color: #7cb2d5;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #78909C;
+	text-decoration: none;
+}
+
+a:active {
+	color: #78909C;
+	text-decoration: none;
+}
+
+
+#navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #f6f6f6;
+	z-index: 1;
+}
+
+.title {
+	position: relative;
+	top: 32px;
+	left: 50px;
+	font-family: "karla", sans-serif;
+	color: #78909C;
+	font-size: 24pt;
+	font-weight: bold;
+
+}
+
+nav {
+	position: relative;
+	float: right;
+	text-align: right;
+	font-size: 15px;
+	font-weight: normal;
+	margin-right: 125px;
+	margin-top: 12px;
+}
+
+nav a {
+	position: relative;
+	margin-left: 45px;
+}
+
+b {
+	color: #7cb2d5;
+}
+
+.my_face {
+	position: relative;
+	top: 125px;
+}
+
+.about_me_header p {
+	font-size: 30px;
+	margin-top: 150px;
+}
+
+.about_me_body p {
+	font-size: 10pt;
+	width: 225px;
+}
+
+.bottom_bar {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	background-color: #f6f6f6;
+	bottom: 0%;
+	text-align: center;
+}
+
+.social_media {
+	margin-top: 12px;
+}
+
+.social_media a {
+	position: relative;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+/* css for work page */
+.projects {
+	position: relative;
+	top: 125px;
+	padding: 150px;
+	text-align: center;
+}
+
+.projects p {
+	position: relative;
+	top: 7px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.cool_button {
+	position: relative;
+	margin-top: 20px;
+	padding: 10px;
+	background: #f6f6f6;
+	display: block;
+	font-weight: 600;
+	border: solid;
+	border-width: thin;
+	border-color: #78909C;
+}
+
+.cool_button:hover {
+	background: #7cb2d5;
+	color: #ffffff;
+
+}
+
+/* css for design page */
+.card-title {
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+#gd-row {
+	text-align: center;
+}
+
+#InnoD-Card {
+	position: relative;
+	padding: 50px;
+	top: 130px;
+	left: 75px;
+}
+
+#Personal {
+	position: relative;
+	padding: 50px;
+	top: 130px;
+	left: -200px;
+}
+
+/* css for photography page */
+#carouselExampleControls {
+	padding: 175px 0;
+}
+
+/* css for innod page */
+#header {
+	position: relative;
+	text-align: center;
+	top: 150px;
+	font-size: 25px;
+	font-weight: 600;
+}
+#final_description {
+	position: relative;
+	margin-bottom: 75px;
+}
+.description {
+	position: relative;
+	text-align: center;
+	margin: auto;
+	top: 165px;
+	width: 600px;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 0px;
+}
