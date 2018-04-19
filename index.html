@@ -2,38 +2,186 @@
 <html>
 <head>
 	<title>Jacqueline Zhang</title>
-	<link rel="stylesheet" type="text/css" href="home.css">
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
 </head>
 <body>
-	<div id="navbar">
-		<div class="title">
-			Jacqueline Zhang
-			<nav>
-				<a href="index.html">about</a>
-				<a href="work.html">projects</a>
-				<a href="Media/resume.pdf">resume</a>
-			</nav>
+	<!-- importing transitions and including arrows on each page -->
+	<div class='easytransitions'>
+    <div class='easytransitions_transition'>
+      <div class='div easytransitions_transition__changeslide none'></div>
+    </div>
+		<!-- nav bar -->
+		<div id="navbar">
+			<div class="title">
+				Jacqueline Zhang
+				<nav>
+					<span class="about">about</span>
+					<span class="projects">projects</span>
+					<a href="Media/resume.pdf">resume</a>
+				</nav>
+			</div>
 		</div>
+		<!-- bottom bar -->
+		<div class="bottom_bar">
+			<div class="social_media">
+				<a href="mailto:jgzhang@berkeley.edu"><i class="far fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/in/jacqueline-zhang-373069159/"><i class="fab fa-linkedin"></i></a>
+				<a href="http://instagram.com/jaekiu"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<!-- about page -->
+		<section id="about_slide" class="active_slide" data-transition='wipe_right'>
+			<div class='easytransitions_navigation'>
+	      <div class='easytransitions_navigation__right'>
+	        <i class='icon ion-arrow-right-c'></i>
+	      </div>
+	    </div>
+			<div class="center">
+				<div class="my_face">
+					<img src="Media/innodteamphoto-2059.jpg" alt="it me" style="width:40%;">
+				</div>
+				<div class="about_me_header header">
+					<p>Hello, I'm <b>Jackie</b>!</p>
+				</div>
+				<div id="final_description" class="about_me_body">
+					<p>I’m a first year studying computer science at UC Berkeley. I’m also passionate about graphic design and photography.</p>
+				</div>
+			</div>
+
+		</section>
+		<section id="projects_slide" data-transition='wipe_right'>
+			<div class='easytransitions_navigation'>
+	      <div class='easytransitions_navigation__left'>
+	        <i class='icon ion-arrow-left-c'></i>
+	      </div>
+	      <!-- <div class='easytransitions_navigation__right'>
+	        <i class='icon ion-arrow-right-c'></i>
+	      </div> -->
+	    </div>
+			<div class="center">
+	      <div class="row">
+	        <div class="col">
+						<div class="img_container">
+	          	<img src="Media/Graphic_Design_Photos/2i.png">
+						</div>
+						<div class="header_2">
+							<!-- Trigger/Open The Modal -->
+							<div id="modal_1" class="modal_button"><p>Second Impressions at Berkeley</p></div>
+						</div>
+							<div class="subtitle"><p>GRAPHIC DESIGN</p></div>
+							<!-- The Modal -->
+							<div id="modal_1_content" class="modal">
+
+							  <!-- Modal content -->
+							  <div class="modal-content">
+							    <span class="close">&times;</span>
+									<div class="header">
+							      <p>Second Impressions at Berkeley</p>
+									</div>
+							    <div id="final_description" class="description">
+							      <p>My second client with Innovative Design was <b>Second Impressions at Berkeley</b>. The officers at Second Impressions at Berkeley requested a <b>logo and cover photo design</b> for both <b>Second Impressions at Berkeley</b> and <b>Second Impressions at UCLA</b>. During my first meeting with a representative from Second Impressions at Berkeley, I learned that the organization was similar to Humans of New York but for international people on campus and off campus. The organization's mission is to portray <b>internationalism and impressions</b>.</p>
+							      <p>Because the organization's mission is to portray internationalism and impressions, I wanted to include these aspects in my logo and cover photo designs. I decided to incorporate a <b>book</b> to represent <b>storytelling</b> and a <b>globe</b> to represent <b>internationalism</b>. The <b>plane</b>, which points towards Berkeley, represents the <b>journey from a different country to the United States</b>. </p>
+							      <img src="Media/InnoD_Photos/102517 - Second Impressions.jpg" alt="First Draft" style="width:85%; height:85%">
+							      <br></br>
+							      <p>The officers at Second Impressions at Berkeley liked my design for the cover photo, so I digitalized my design on <b>Adobe Illustrator</b>. I incorporated the <b>school colors</b> in order to make the Berkeley and the UCLA cover photos distinctive.</p>
+							      <img src="Media/InnoD_Photos/2i - 110917.png" alt="Second Draft" style="width:85%; height:85%">
+							      <br></br>
+							      <p>Second Impressions at Berkeley ended up selecting the bottom row of cover photos (Berkeley with yellow background and UCLA with light blue background). Second Impressions at Berkeley is currently using my design as their cover photo on their Facebook page.</p>
+							      <img src="Media/InnoD_Photos/Screen Shot 2018-03-02 at 2.46.42 PM.png" style="width:85%; height:85%">
+							    </div>
+							  </div>
+						</div>
+					</div>
+	        <div class="col">
+						<div class="img_container">
+	          	<img src="Media/Graphic_Design_Photos/ieee.png">
+						</div>
+						<div class="header_2">
+							<!-- Trigger/Open The Modal -->
+							<div id="modal_2" class="modal_button"><p>IEEE at Berkeley</p></div>
+						</div>
+							<div class="subtitle"><p>GRAPHIC DESIGN</p></div>
+							<!-- The Modal -->
+							<div id="modal_2_content" class="modal">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<div class="header">
+							      <p>IEEE at Berkeley</p>
+							    </div>
+							    <div class="description">
+							      <p>My first client with Innovative Design was <b>Institute of Electrical and Electronics Engineers (IEEE) at Berkeley</b>. The officers at IEEE at Berkeley requested a <b>logo remake</b> that <b>correlated</b> with the <b>official IEEE logo</b> while incorporating elements that <b>represented Berkeley</b>.</p>
+							      <p>For my first draft, I created a graphic of the <b>Campanile</b>, the symbolic clocktower at the center of the UC Berkeley campus. The Campanile, shaped similarly to an arrow, replaced the up arrow in the middle of the official IEEE logo. I replicated the kite shape and the circular arrow in order to stay <b>consistent</b> with the original IEEE logo.</p>
+										<div class="col">
+							        <img src="Media/InnoD_Photos/IEEE_logo OFFICIAL.png" style="width:224.75px; height:126px;"><br>
+							        <p>Official IEEE Logo</p>
+							      </div>
+							      <div class="col">
+							        <img src="Media/InnoD_Photos/Artboard 1.png" alt="IEEE First Draft" style="width:125px; height:125px;">
+							        <p>My IEEE Logo Design</p>
+							      </div>
+										<br>
+							      <p>I worked together with <b>Victor Zhang</b>, another graphic designer on my team. The circular arrow that he designed was more clean and visually looked better and was preferred by the officers at IEEE at Berkeley. We collaborated to combine his arrow with my Campanile.</p>
+							      <img src="Media/InnoD_Photos/IEEE_03.png" alt="IEEE Second Draft" style="width:50%; height:50%">
+									</div>
+									<div id="final_description" class="description">
+										<p>Victor and I worked together to determine the best placement of text for the final design. IEEE at Berkeley ended up selecting the following arrangement as the final design:</p>
+							      <img src="Media/InnoD_Photos/FINAL LOGO IEEE.png" alt="IEEE Final Draft" style="width:50%; height:50%">
+							    </div>
+								</div>
+						</div>
+	        </div>
+					<div class="col">
+						<div class="img_container">
+	          	<img src="Media/Personal_Projects/tiny's.png">
+						</div>
+						<div class="header_2">
+							<!-- Trigger/Open The Modal -->
+							<div id="modal_3" class="modal_button"><p>Personal Visual Illustrations</p></div>
+						</div>
+							<div class="subtitle"><p>GRAPHIC DESIGN</p></div>
+							<!-- The Modal -->
+							<div id="modal_3_content" class="modal">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<div class="header">
+								    <p>Personal Projects</p>
+								  </div>
+								  <div class="description">
+								    <p>Just things I <b>enjoyed</b> designing!</p>
+										<br>
+								  </div>
+								  <div id="final_description" class="description">
+								      <img src="Media/Personal_Projects/tiny's.png" style="width:50%; height:50%"><br>
+								      <br>
+								      <p>A 2D representation of <a href="https://www.tinysnyc.com/">Tiny's and the Bar Upstairs</a> located in New York.</p>
+								      <img src="Media/Personal_Projects/roots.png" style="width:50%; height:50%"><br>
+								      <p>A design I created for the prompt <b>"Roots"</b>. It represents the <b>"Roots of Northwood"</b> (Northwood was the high school I attended), and it shows the two sides of a Northwood student: the <b>academic side</b> and the <b>creative side</b>.</p>
+								      <img src="Media/Personal_Projects/How Much Time Do We Have.png" style="width:50%; height:50%"><br>
+								      <br></br>
+								      <p>Graphic for Back to School Yearbook Page</p>
+								      <img src="Media/Personal_Projects/Girls-Golf-Sun.png" style="width:50%; height:50%">
+								      <br></br>
+								      <p>Graphic for Girls' Golf Yearbook Page</p>
+								      <img src="Media/Personal_Projects/Suitcase.png" style="width:50%; height:50%">
+								      <br></br>
+								      <p>Graphic for Girls' Soccer Yearbook Page</p>
+								  </div>
+								</div>
+						</div>
+	        </div>
+	      </div>
+			</div>
+		</section>
 	</div>
-	<div align="center">
-		<div class="my_face">
-			<img src="Media/innodteamphoto-2059.jpg" alt="it me" style="width:512px; height:342px">
-		</div>
-		<div class="about_me_header">
-			<p>Hello, I'm <b><font color="#7cb2d5">Jackie</font></b>!</p>
-		</div>
-		<div id="final_description" class="about_me_body">
-			<p>I’m a first year studying computer science at UC Berkeley. I’m also passionate about graphic design and photography.</p>
-		</div>
-	</div>
-	<div class="bottom_bar">
-		<div class="social_media">
-			<a href="mailto:jgzhang@berkeley.edu"<i class="far fa-envelope"></i></a>
-			<a href="https://www.linkedin.com/in/jacqueline-zhang-373069159/"><i class="fab fa-linkedin"></i></a>
-			<a href="http://instagram.com/jaekiu"><i class="fab fa-instagram"></i></a>
-		</div>
-	</div>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="index.js"></script>
 </body>
 </html>

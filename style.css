@@ -1,0 +1,366 @@
+/* UPDATED - APRIL 18TH, 2018 */
+/* GENERAL MODIFIED ELEMENTS */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "karla", sans-serif;
+	color: #78909C;
+	line-height: normal;
+}
+
+a {
+	transition: all 0.5s linear;
+}
+
+a:link, a:visited {
+	color: #7cb2d5;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #78909C;
+	text-decoration: none;
+}
+
+a:active {
+	color: #78909C;
+	text-decoration: none;
+}
+
+b {
+	color: #7cb2d5;
+}
+
+p {
+	font-size: 10pt;
+}
+
+.header p {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.header_2 p {
+	font-size: 20px;
+	font-weight: 600;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.subtitle p {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #C0C0C0;
+	margin: auto;
+}
+
+.col {
+	float: left;
+	width: 50%;
+}
+
+.row {
+	position: relative;
+  width: 85%;
+	margin: auto;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.row * {
+	box-sizing: border-box;
+}
+
+.modal_button {
+	transition: all 0.5s linear;
+	color: #7cb2d5;
+	font-size: 20px;
+}
+
+.modal_button:hover {
+	color: #78909C;
+	cursor: pointer;
+}
+
+#final_description { /* THIS IS TO AVOID CONTENT BEING HIDDEN BY FOOTER BAR */
+	position: relative;
+	margin-bottom: 75px;
+}
+
+.description {
+	width: 75%;
+	margin: auto;
+}
+
+/* NAVIGATION AND SOCIAL MEDIA */
+#navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px; /* 14% */
+	background-color: #f6f6f6;
+	z-index: 1;
+}
+
+.bottom_bar {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	background-color: #f6f6f6;
+	bottom: 0%;
+	text-align: center;
+	z-index: 1;
+}
+
+.social_media {
+	margin-top: 12px;
+}
+
+.social_media a {
+	position: relative;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+/* ABOUT SCREEN */
+.title {
+	position: relative;
+	top: 32px;
+	left: 50px;
+	font-family: "karla", sans-serif;
+	color: #78909C;
+	font-size: 24pt;
+	font-weight: bold;
+
+}
+
+nav {
+	position: relative;
+	float: right;
+	text-align: right;
+	font-size: 15px;
+	font-weight: normal;
+	margin-right: 125px;
+	margin-top: 12px;
+}
+
+nav a, nav span {
+	position: relative;
+	margin-left: 45px;
+}
+
+nav span {
+	transition: all 0.5s linear;
+	color: #7cb2d5;
+}
+
+nav span:hover {
+	color: #78909C;
+}
+
+.my_face {
+	position: relative;
+	top: 125px;
+}
+
+.about_me_header p {
+	margin-top: 150px;
+}
+
+.about_me_body p {
+	font-size: 10pt;
+	width: 225px;
+	margin: auto;
+}
+
+/* PROJECTS */
+.img_container {
+	margin: auto;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+
+.img_container img {
+	position: relative;
+	width: 80%;
+	height: auto;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* TRANSITIONS */
+body .easytransitions_transition div {
+  width: 200px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: 1;
+}
+
+body .easytransitions_transition .wipe_right {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+body .easytransitions_transition__changeslide {
+  height: 100% !important;
+  display: none;
+  right: -200px;
+  -webkit-transform-origin: 0px 200px;
+          transform-origin: 0px 200px;
+  -webkit-animation: vertical_r 1.2s forwards;
+          animation: vertical_r 1.2s forwards;
+}
+body .easytransitions_transition__changeslide.wipe_right {
+  display: block;
+}
+
+@-webkit-keyframes vertical {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform: scaleX(10);
+            transform: scaleX(10);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+@keyframes vertical {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform: scaleX(10);
+            transform: scaleX(10);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+@-webkit-keyframes vertical_r {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform: scaleX(-10);
+            transform: scaleX(-10);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+@keyframes vertical_r {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform: scaleX(-10);
+            transform: scaleX(-10);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+/* Navigation Arrows*/
+body .easytransitions_navigation {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 2;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+body .easytransitions_navigation i {
+  color: #C0C0C0;
+  font-size: 28px;
+  cursor: pointer;
+}
+body .easytransitions_navigation__left {
+  float: left;
+  margin-left: 30px;
+}
+body .easytransitions_navigation__right {
+  float: right;
+  margin-right: 30px;
+}
+body .easytransitions .active_slide {
+  display: block;
+}
+
+body .easytransitions section {
+  height: 100vh;
+  display: none;
+}
+body .easytransitions section .center {
+  position: absolute;
+  margin: auto;
+	left: 0;
+	right: 0;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+}
+
+/* Backgrounds for Slides */
+body .easytransitions section {
+  background: white;
+}
+
+/* popup */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+		transition: all 0.5s linear;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
