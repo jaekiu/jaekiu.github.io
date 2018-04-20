@@ -116,13 +116,20 @@ var modal_6_content = document.getElementById("modal_6_content");
 var modal_7_content = document.getElementById("modal_7_content");
 
 // Get the button that opens the modal
-var modal_1 = document.getElementById("modal_1");
-var modal_2 = document.getElementById("modal_2");
-var modal_3 = document.getElementById("modal_3");
-var modal_4 = document.getElementById("modal_4");
-var modal_5 = document.getElementById("modal_5");
-var modal_6 = document.getElementById("modal_6");
-var modal_7 = document.getElementById("modal_7");
+var modal_1_box = document.getElementById("modal_1_box");
+var modal_1_text = document.getElementById("modal_1_text");
+var modal_2_box = document.getElementById("modal_2_box");
+var modal_2_text = document.getElementById("modal_2_text");
+var modal_3_box = document.getElementById("modal_3_box");
+var modal_3_text = document.getElementById("modal_3_text");
+var modal_4_box = document.getElementById("modal_4_box");
+var modal_4_text = document.getElementById("modal_4_text");
+var modal_5_box = document.getElementById("modal_5_box");
+var modal_5_text = document.getElementById("modal_5_text");
+var modal_6_box = document.getElementById("modal_6_box");
+var modal_6_text = document.getElementById("modal_6_text");
+var modal_7_box = document.getElementById("modal_7_box");
+var modal_7_text = document.getElementById("modal_7_text");
 
 // Get the <span> element that closes the modal
 var span_1 = document.getElementsByClassName("close")[0];
@@ -134,25 +141,46 @@ var span_6 = document.getElementsByClassName("close")[5];
 var span_7 = document.getElementsByClassName("close")[6];
 
 // When the user clicks on the button, open the modal
-modal_1.onclick = function() {
+modal_1_box.onclick = function() {
     modal_1_content.style.display = "block";
 }
-modal_2.onclick = function() {
+modal_1_text.onclick = function() {
+    modal_1_content.style.display = "block";
+}
+modal_2_box.onclick = function() {
     modal_2_content.style.display = "block";
 }
-modal_3.onclick = function() {
+modal_2_text.onclick = function() {
+    modal_2_content.style.display = "block";
+}
+modal_3_box.onclick = function() {
     modal_3_content.style.display = "block";
 }
-modal_4.onclick = function() {
+modal_3_text.onclick = function() {
+    modal_3_content.style.display = "block";
+}
+modal_4_box.onclick = function() {
     modal_4_content.style.display = "block";
 }
-modal_5.onclick = function() {
+modal_4_text.onclick = function() {
+    modal_4_content.style.display = "block";
+}
+modal_5_box.onclick = function() {
     modal_5_content.style.display = "block";
 }
-modal_6.onclick = function() {
+modal_5_text.onclick = function() {
+    modal_5_content.style.display = "block";
+}
+modal_6_box.onclick = function() {
     modal_6_content.style.display = "block";
 }
-modal_7.onclick = function() {
+modal_6_text.onclick = function() {
+    modal_6_content.style.display = "block";
+}
+modal_7_box.onclick = function() {
+    modal_7_content.style.display = "block";
+}
+modal_7_text.onclick = function() {
     modal_7_content.style.display = "block";
 }
 
@@ -175,7 +203,7 @@ span_5.onclick = function() {
 span_6.onclick = function() {
     modal_6_content.style.display = "none";
 }
-span_6.onclick = function() {
+span_7.onclick = function() {
     modal_7_content.style.display = "none";
 }
 
