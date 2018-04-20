@@ -99,6 +99,7 @@ var modal_3_content = document.getElementById("modal_3_content");
 var modal_4_content = document.getElementById("modal_4_content");
 var modal_5_content = document.getElementById("modal_5_content");
 var modal_6_content = document.getElementById("modal_6_content");
+var modal_7_content = document.getElementById("modal_7_content");
 
 // Get the button that opens the modal
 var modal_1 = document.getElementById("modal_1");
@@ -107,6 +108,7 @@ var modal_3 = document.getElementById("modal_3");
 var modal_4 = document.getElementById("modal_4");
 var modal_5 = document.getElementById("modal_5");
 var modal_6 = document.getElementById("modal_6");
+var modal_7 = document.getElementById("modal_7");
 
 // Get the <span> element that closes the modal
 var span_1 = document.getElementsByClassName("close")[0];
@@ -115,6 +117,7 @@ var span_3 = document.getElementsByClassName("close")[2];
 var span_4 = document.getElementsByClassName("close")[3];
 var span_5 = document.getElementsByClassName("close")[4];
 var span_6 = document.getElementsByClassName("close")[5];
+var span_7 = document.getElementsByClassName("close")[6];
 
 // When the user clicks on the button, open the modal
 modal_1.onclick = function() {
@@ -154,6 +157,9 @@ span_5.onclick = function() {
 span_6.onclick = function() {
     modal_6_content.style.display = "none";
 }
+span_6.onclick = function() {
+    modal_7_content.style.display = "none";
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -175,6 +181,9 @@ window.onclick = function(event) {
     if (event.target == modal_6_content) {
         modal_6_content.style.display = "none";
     }
+    if (event.target == modal_7_content) {
+        modal_7_content.style.display = "none";
+    }
 }
 
 // Close all when changing pages
@@ -185,4 +194,5 @@ function close_modals() {
   modal_4_content.style.display = "none";
   modal_5_content.style.display = "none";
   modal_6_content.style.display = "none";
+  modal_7_content.style.display = "none";
 }
