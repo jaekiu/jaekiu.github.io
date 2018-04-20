@@ -158,6 +158,11 @@ nav span {
 
 nav span:hover {
 	color: #78909C;
+	cursor: pointer;
+}
+
+.home:hover {
+	cursor: pointer;
 }
 
 .my_face {

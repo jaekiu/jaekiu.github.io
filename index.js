@@ -6,6 +6,7 @@ var right_arrow = $('.easytransitions_navigation__right'); // Element that trigg
 var left_arrow = $('.easytransitions_navigation__left'); // Element that trigger move left
 var slide_amount = $('.easytransitions section').length; // How many slides
 var current_slide = 1; // Starting slide
+var home = $('.home');
 var about = $('.about'); // about navigation
 var projects = $('.projects'); // projects navigation
 var photography = $('.photography'); // photography navigation
@@ -36,6 +37,19 @@ left_arrow.click(function(){
 
 // NAVIGATION BAR !!!!!!!!!!!!!!!
 // ABOUT NAVIGATION
+home.on('click', function(){
+  if(current_slide !== 1){
+    current_slide = 1;
+    close_modals();
+    var active_slide = $('#about_slide')
+    set_transition(active_slide);
+    setTimeout(function(){
+      $('.active_slide').hide().removeClass('active_slide');
+      $('#about_slide').addClass('active_slide').show();
+    },change_point);
+  }
+});
+
 about.on('click', function(){
   if(current_slide !== 1){
     current_slide = 1;
@@ -138,6 +152,10 @@ modal_5.onclick = function() {
 modal_6.onclick = function() {
     modal_6_content.style.display = "block";
 }
+modal_7.onclick = function() {
+    modal_7_content.style.display = "block";
+}
+
 // When the user clicks on <span> (x), close the modal
 span_1.onclick = function() {
     modal_1_content.style.display = "none";
