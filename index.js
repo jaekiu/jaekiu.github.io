@@ -6,95 +6,59 @@ var right_arrow = $('.easytransitions_navigation__right'); // Element that trigg
 var left_arrow = $('.easytransitions_navigation__left'); // Element that trigger move left
 var slide_amount = $('.easytransitions section').length; // How many slides
 var current_slide = 1; // Starting slide
-var on = 1;
 var about = $('.about');
 var projects = $('.projects'); // projects navigation
 
 right_arrow.click(function(){
-  if(on == 1){
-    on = 0;
-    if(current_slide < slide_amount){
-      current_slide++;
-      var active_slide = $('.active_slide').next()
-      set_transition(active_slide);
-      setTimeout(function(){
-        $('.active_slide').hide().removeClass('active_slide').next().addClass('active_slide').show();
-      },change_point);
-      setTimeout(function(){
-        on = 1;
-      },slide_time);
-
-    } else {
-      // End
-    }
+  if(current_slide < slide_amount){
+    current_slide++;
+    close_modals();
+    var active_slide = $('.active_slide').next()
+    set_transition(active_slide);
+    setTimeout(function(){
+      $('.active_slide').hide().removeClass('active_slide').next().addClass('active_slide').show();
+    },change_point);
   }
 });
 
 left_arrow.click(function(){
-  if(on == 1){
-    on = 0;
-    if(current_slide > 1){
-      current_slide--;
-      var active_slide = $('.active_slide').prev()
-      set_transition(active_slide);
-      setTimeout(function(){
-        $('.active_slide').hide().removeClass('active_slide').prev().addClass('active_slide').show();
-      },change_point);
-      setTimeout(function(){
-        on = 1;
-      },slide_time);
-    }
-    else if(current_slide === 1) {
-      left_arrow.style.visibility = "hidden";
-    }
-    else {
-      // Start
-    }
+  if(current_slide > 1){
+    current_slide--;
+    close_modals();
+    var active_slide = $('.active_slide').prev()
+    set_transition(active_slide);
+    setTimeout(function(){
+      $('.active_slide').hide().removeClass('active_slide').prev().addClass('active_slide').show();
+    },change_point);
   }
 });
 
 // NAVIGATION BAR !!!!!!!!!!!!!!!
 // ABOUT NAVIGATION
 about.on('click', function(){
-  if(on == 1){
-    on = 0;
-    if(current_slide !== 1){
-      current_slide = 1;
-      var active_slide = $('#about_slide')
-      set_transition(active_slide);
-      setTimeout(function(){
-        $('.active_slide').hide().removeClass('active_slide');
-        $('#about_slide').addClass('active_slide').show();
-      },change_point);
-      setTimeout(function(){
-        on = 1;
-      },slide_time);
-    } else {
-      // End
-      on = 1;
-    }
+  if(current_slide !== 1){
+    current_slide = 1;
+    close_modals();
+    var active_slide = $('#about_slide')
+    set_transition(active_slide);
+    setTimeout(function(){
+      $('.active_slide').hide().removeClass('active_slide');
+      $('#about_slide').addClass('active_slide').show();
+    },change_point);
   }
 });
 
 // PROJECTS NAVIGATION
 projects.on('click', function(){
-  if(on == 1){
-    on = 0;
-    if(current_slide !== 2){
-      current_slide = 2;
-      var active_slide = $('#projects_slide')
-      set_transition(active_slide);
-      setTimeout(function(){
-        $('.active_slide').hide().removeClass('active_slide');
-        $('#projects_slide').addClass('active_slide').show();
-      },change_point);
-      setTimeout(function(){
-        on = 1;
-      },slide_time);
-    } else {
-      // End
-      on = 1;
-    }
+  if(current_slide !== 2){
+    current_slide = 2;
+    close_modals();
+    var active_slide = $('#projects_slide')
+    set_transition(active_slide);
+    setTimeout(function(){
+      $('.active_slide').hide().removeClass('active_slide');
+      $('#projects_slide').addClass('active_slide').show();
+    },change_point);
   }
 });
 
@@ -160,4 +124,11 @@ window.onclick = function(event) {
     if (event.target == modal_3_content) {
         modal_3_content.style.display = "none";
     }
+}
+
+// Close all when changing pages
+function close_modals() {
+  modal_1_content.style.display = "none";
+  modal_2_content.style.display = "none";
+  modal_3_content.style.display = "none";
 }
