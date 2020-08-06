@@ -50,6 +50,9 @@ button {
     margin-block-end: 0.8em;
 }
 
+button:active, button:focus {
+    outline: none;
+}
 
 .button-background {
     background-color: #FFDCC2;
