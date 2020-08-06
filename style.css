@@ -72,7 +72,7 @@ button {
     transition: background-color 0.9s;
 }
 
-.header {
+header {
     position: fixed;
     display: flex; 
     justify-content: center;
@@ -80,7 +80,7 @@ button {
     width: 100vw;
 }
 
-.header > .right-col > a {
+header > .right-col > a {
     color: #000;
     font-size: 14px;
     margin: 0 0 0 40px;
@@ -92,20 +92,20 @@ button {
     transition: color 0.9s, background-color 0.9s;
 }
 
-.header > .right-col > a:hover, .text-link:hover {
+header > .right-col > a:hover, .text-link:hover {
     background-color: #FFDCC2;
 }
 
-.header > .right-col > a:hover {
+header > .right-col > a:hover {
     color: #FF2E00;
 }
 
-.header > .left-col > img {
+header > .left-col > img {
     height: 20px;
     margin-left: 20px;
 }
 
-.header > .left-col, .header > .right-col {
+header > .left-col, header > .right-col {
     box-sizing: border-box;
     position: relative;
     height: 100%; 
@@ -113,7 +113,7 @@ button {
     padding: 5vh 7.5%;
 }
 
-.header > .right-col {
+header > .right-col {
     text-align: right;
 }
 
