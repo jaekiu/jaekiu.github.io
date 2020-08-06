@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jacqueline Zhang</title>
+	<meta name="Description" content="Hi, I'm Jackie! Come learn more about me and browse through my portfolio!">
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="Media/favicon.png"/>
+</head>
+<body>
+	<!-- importing transitions and including arrows on each page -->
+	<div class='easytransitions'>
+    <div class='easytransitions_transition'>
+      <div class='div easytransitions_transition__changeslide none'></div>
+    </div>
+		<!-- nav bar -->
+		<div id="navbar">
+			<div class="title">
+				<span class="home">Jacqueline Zhang</span>
+				<nav>
+					<span class="about">about</span>
+					<span class="projects">projects</span>
+					<span class="photography">photography</span>
+					<a href="Media/resume.pdf">resume</a>
+				</nav>
+			</div>
+		</div>
+		<!-- bottom bar -->
+		<div class="bottom_bar">
+			<div class="social_media">
+				<a href="mailto:jgzhang@berkeley.edu"><i class="far fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/in/jacqueline-zhang-373069159/"><i class="fab fa-linkedin"></i></a>
+				<a href="https://instagram.com/jaekiu"><i class="fab fa-instagram"></i></a>
+				<a href="https://github.com/jaekiu"><i class="fab fa-github"></i></a>
+
+			</div>
+		</div>
+		<!-- about page -->
+		<section id="about_slide" class="active_slide" data-transition='wipe_right'>
+			<div class='easytransitions_navigation'>
+	      <div class='easytransitions_navigation__right'>
+	        <i class='icon ion-arrow-right-c'></i>
+	      </div>
+	    </div>
+			<div class="center">
+				<div class="my_face">
+					<img src="Media/innodteamphoto-2059.jpg" alt="it me" style="width:40%;">
+				</div>
+				<div class="about_me_header header">
+					<p>Hello, I'm <b>Jackie</b>!</p>
+				</div>
+				<div id="final_description" class="about_me_body">
+					<p>I’m a junior studying computer science at UC Berkeley. I’m also passionate about graphic design and photography!</p>
+				</div>
+			</div>
+
+		</section>
+		<section id="projects_slide" data-transition='wipe_right'>
+			<div class='easytransitions_navigation'>
+	      <div class='easytransitions_navigation__left'>
+	        <i class='icon ion-arrow-left-c'></i>
+	      </div>
+	      <div class='easytransitions_navigation__right'>
+	        <i class='icon ion-arrow-right-c'></i>
+	      </div>
+	    </div>
+			<div class="center">
+	      <div class="row">
+			  <div class="col">
+				  <div class="img_container">
+		  <img src="Media/CalHacks_Photos/nav-logo.3f5e6a6c.svg">
+					  <div id="modal_1_box" class="overlay modal_button">
+						  <p><span style="text-transform: uppercase; font-weight: 600;"><u>november 2018</u></span><br></br>
+							  A program that generates outfits for you based on your wardrobe and location.
+							  <br></br> Click to read more about this project!</p>
+					  </div>
+				  </div>
+				  <div class="header_2">
+					  <!-- Trigger/Open The Modal -->
+					  <div id="modal_1_text" class="modal_button"><p>StyleMe | CalHacks 5.0</p></div>
+				  </div>
+					  <div class="subtitle"><p>PROGRAM CODED IN PYTHON</p></div>
+					  <!-- The Modal -->
+					  <div id="modal_1_content" class="modal">
+						<!-- Modal content -->
+						<div class="modal-content">
+						  <span class="close">&times;</span>
+							  <div class="header">
+							<b><p>StyleMe</p></b>
+							  </div>
+							  <i>Created by Jacqueline Zhang and Sahil Sanghvi for CalHacks 5.0<br>
+							  Check out our project <a href="https://github.com/jaekiu/StyleMe" target="_blank">here</a>!</i>
+
+							  <div class="header_2">
+								  <p>Introduction</p>
+							  </div>
+						  <div class="description">
+							<p>We all have those days when we wake up and don't know what to wear. We want to be stylish, but we also don't have the time to stand there and contemplate about what tops would pair well with certain bottoms. In order to help reduce the indecisive moments we have regarding our outfit choices, <b>StyleMe</b> automatically generates outfit choices based on <b>items in your wardrobe</b> and environmental factors such as the <b>weather</b>.</p>
+							  </div>
+							  <div class="header_2">
+								  <p>How Does This Work</p>
+							  </div>
+							  <div class="description">
+								  <p>Using <b>IBM Watson's Vision Recognition API</b>, we created a <b>custom classifier</b> and trained it with over <b>1100 images</b>. These images were grouped by article of clothing, and a vast majority of images from different backgrounds, angles, etc. were included in order to maximize accuracy.</p>
+								  <p>We also used the <b>OpenWeatherMap API</b> to gather data about weather conditions in the specificied city that we are observing.</p>
+								  <p>Combining the two, the Python script would filter through articles in your wardrobe based on weather conditions that day. The script matches outfit combinations, ensuring that each top is paired with a bottom and that outerwear is optional. It displays these outfit choices with <b>OpenCV2</b>.</p>
+								  <img src="Media/CalHacks_Photos/demo.png" style="width: 72%;">
+							  <div class="header_2">
+								  <p>Awards</p>
+							  </div>
+							  <div class="description">
+								  <p>In November 2018, StyleMe tied for <b>1st place</b> in the <b>IBM API Challenge</b> for CalHacks 5.0!</p>
+								  <img src="Media/CalHacks_Photos/win.jpg" style="width: 85%;">
+							  </div>
+							  <div class="header_2">
+								  <p>What's Next?</p>
+							  </div>
+							  <div id="final_description" class="description">
+							<p>Sahil and I have many floating ideas that we would LOVE to implement and/or expand on for StyleMe. Some of our ideas include, but are not limited to:
+								- Turning it into a web application (potentially through Meteor)
+								- Retraining the classifier to be more specific (fabrics, hooded vs non-hooded jackets, etc.)
+								- User being able to input an occassion and filtering outfits based on criteria related to that occassion
+								- Implementing a bot that reads the latest fashion trends and using that information to create stylish outfits
+								- Shopping recommendations based on what the user currently has in his/her wardrobe </p>
+								<img src="Media/CalHacks_Photos/working.jpg" style="width: 90%;">
+							  </div>
+						</div>
+				  </div>
+			  </div>
+		  </div>
+	        <div class="col">
+						<div class="img_container">
+	          	<img src="Media/Graphic_Design_Photos/2i.png">
+							<div id="modal_2_box" class="overlay modal_button">
+								<p><span style="text-transform: uppercase; font-weight: 600;"><u>oct 2017 - nov 2017</u></span><br></br>
+									Second client with <a href="https://innovativedesign.club/" target="_blank">Innovative Design</a>.
+									<br></br>Created cover photos for Second Impressions at Berkeley and at UCLA for their Facebook pages.
+								<br></br> Click to read more about this project!</p>
+							</div>
+						</div>
+						<div class="header_2">
+							<!-- Trigger/Open The Modal -->
+							<div id="modal_2_text" class="modal_button"><p>Second Impressions at Berkeley</p></div>
+						</div>
+							<div class="subtitle"><p>GRAPHIC DESIGN</p></div>
+							<!-- The Modal -->
+							<div id="modal_2_content" class="modal">
+							  <!-- Modal content -->
+							  <div class="modal-content">
+							    <span class="close">&times;</span>
+									<div class="header">
+							      <b><p>Second Impressions at Berkeley</p></b>
+									</div>
+									<div class="header_2">
+										<p>The Process</p>
+									</div>
+							    <div class="description">
+							      <p>My second client with Innovative Design was <b>Second Impressions at Berkeley</b>. The officers at Second Impressions at Berkeley requested a <b>logo and cover photo design</b> for both <b>Second Impressions at Berkeley</b> and <b>Second Impressions at UCLA</b>. During my first meeting with a representative from Second Impressions at Berkeley, I learned that the organization was similar to Humans of New York but for international people on campus and off campus. The organization's mission is to portray <b>internationalism and impressions</b>.</p>
+							      <p>Because the organization's mission is to portray <b>internationalism and impressions</b>, I wanted to include these aspects in my logo and cover photo designs. I decided to incorporate a <b>book</b> to represent <b>storytelling</b> and a <b>globe</b> to represent <b>internationalism</b>. The <b>plane</b>, which points towards Berkeley, represents the <b>journey from a different country to the United States</b>. </p>
+							      <img src="Media/InnoD_Photos/102517 - Second Impressions.jpg" alt="First Draft" style="width:85%; height:85%">
+							      <br></br>
+							      <p>The officers at Second Impressions at Berkeley liked my design for the cover photo, so I digitalized my design on <b>Adobe Illustrator</b>. I incorporated the <b>school colors</b> in order to make the Berkeley and the UCLA cover photos distinctive.</p>
+							      <img src="Media/InnoD_Photos/2i - 110917.png" alt="Second Draft" style="width:85%; height:85%">
+							      <br></br>
+							      <p>Second Impressions at Berkeley ended up selecting the bottom row of cover photos (Berkeley with yellow background and UCLA with light blue background). Second Impressions at Berkeley is currently using my design as their cover photo on their Facebook page.</p>
+							      <img src="Media/InnoD_Photos/Screen Shot 2018-03-02 at 2.46.42 PM.png" style="width:85%; height:85%">
+									</div>
+									<div class="header_2">
+										<p>Reflections</p>
+									</div>
+									<div id="final_description" class="description">
+										<p>This project taught me the <b>importance of communication</b>, especially when <b>working with clients</b>. The themes of internationalism and impressions was hard to convey symbolically, and I had to <b>communicate frequently</b> with the representatives at Second Impressions at Berkeley in order to <b>facilitate ideas</b> and <b>produce something they wanted</b>.</p>
+										<p>If I could redo this project, I would've included <b>more digitalized designs</b> for the client. Although the officers settled on one specific design from my doodles, I wish I had given them <b>more options</b> to choose from when the design was digitalized. Unfortunately, since this project was near the end of the semester, <b>time constraints</b> also played a huge role in me not being able to accomplish this.</p>
+									</div>
+							  </div>
+						</div>
+					</div>
+	        <div class="col">
+						<div class="img_container">
+	          	<img src="Media/Graphic_Design_Photos/ieee.png">
+							<div id="modal_3_box" class="overlay modal_button">
+								<p><span style="text-transform: uppercase; font-weight: 600;"><u>sept 2017 - oct 2017</u></span><br></br>
+									First client with <a href="https://innovativedesign.club/" target="_blank">Innovative Design</a>.
+									<br></br>Redesigned the organization's logo.
+								<br></br> Click to read more about this project!</p>
+							</div>
+						</div>
+						<div class="header_2">
+							<!-- Trigger/Open The Modal -->
+							<div id="modal_3_text" class="modal_button"><p>IEEE at Berkeley</p></div>
+						</div>
+							<div class="subtitle"><p>GRAPHIC DESIGN</p></div>
+							<!-- The Modal -->
+							<div id="modal_3_content" class="modal">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<div class="header">
+							      <b><p>IEEE at Berkeley</p></b>
+							    </div>
+									<div class="header_2">
+										<p>The Process</p>
+									</div>
+							    <div class="description">
+							      <p>My first client with Innovative Design was <b>Institute of Electrical and Electronics Engineers (IEEE) at Berkeley</b>. The officers at IEEE at Berkeley requested a <b>logo remake</b> that <b>correlated</b> with the <b>official IEEE logo</b> while incorporating elements that <b>represented Berkeley</b>.</p>
+							      <p>For my first draft, I created a graphic of the <b>Campanile</b>, the symbolic clocktower at the center of the UC Berkeley campus. The Campanile, shaped similarly to an arrow, replaced the up arrow in the middle of the official IEEE logo. I replicated the kite shape and the circular arrow in order to stay <b>consistent</b> with the original IEEE logo.</p>
+										<div class="col">
+							        <img src="Media/InnoD_Photos/IEEE_logo OFFICIAL.png" style="width:224.75px; height:126px;"><br>
+							        <p>Official IEEE Logo</p>
+							      </div>
+							      <div class="col">
+							        <img src="Media/InnoD_Photos/Artboard 1.png" alt="IEEE First Draft" style="width:125px; height:125px;">
+							        <p>My IEEE Logo Design</p><br>
+							      </div>
+							      <p>I worked together with <b>Victor Zhang</b>, another graphic designer on my team. The circular arrow that he designed was more clean and visually looked better and was preferred by the officers at IEEE at Berkeley. We collaborated to combine his arrow with my Campanile.</p>
+							      <img src="Media/InnoD_Photos/IEEE_03.png" alt="IEEE Second Draft" style="width:50%; height:50%">
+										<p>Victor and I worked together to determine the <b>best placement of text for the final design</b>. IEEE at Berkeley ended up selecting the following arrangement as the final design:</p>
+							      <img src="Media/InnoD_Photos/FINAL LOGO IEEE.png" alt="IEEE Final Draft" style="width:50%; height:50%">
+							    </div>
+									<div class="header_2">
+										<p>Reflections</p>
+									</div>
+									<div id="final_description" class="description">
+										<p>This project was <b>very rewarding</b> for me. It was the first professional client I've received as a graphic designer, and the entire process taught me the <b>importance of communication and teamwork</b>. I had to <b>communicate frequently</b> with the officers of IEEE to ensure that I created mockup designs that <b>aligned with what they wanted</b>. In addition, I had to <b>collaborate with my teammate</b>, Victor, to <b>facilitate ideas/designs</b> and <b>produce a final deliverable</b> that <b>satisfied our client's logo requirements</b>. This experience also helped me <b>improve as a graphic designer</b>, for I received <b>constructive criticism</b> from my team leader, my other teammates who weren't working on this specific project, and the officers at IEEE themselves.</p>
+										<p>For me, the <b>major fallback</b> about this project, however, was the fact that it <b>restricted my creative freedom</b>. Since IEEE at Berkeley already had a set idea on how they wanted their logo to look like (they wanted their logo to be similar to the official IEEE logo), there weren't many opportunites to <b>think outside the box</b> and <b>create something fresh</b>. Victor and I did make some <b>slight modifications</b>, such as incorporating the Campanile and changing the arrow to make the logo sleek and cleaner, but other than that, there wasn't much that could be modified to the logo without breaking their requirements.</p>
+									</div>
+								</div>
+						</div>
+	        </div>
+					<div class="col">
+						<div class="img_container">
+	          	<img src="Media/Personal_Projects/tiny's.png">
+							<div id="modal_4_box" class="overlay modal_button">
+								<p>Doodles and designs I created for personal work or just for fun!
+									<br></br> Click to view my visual illustrations!</p>
+							</div>
+						</div>
+						<div class="header_2">
+							<!-- Trigger/Open The Modal -->
+							<div id="modal_4_text" class="modal_button"><p>Visual Illustrations</p></div>
+						</div>
+							<div class="subtitle"><p>GRAPHIC DESIGN</p></div>
+							<!-- The Modal -->
+							<div id="modal_4_content" class="modal">
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<div class="header">
+								    <b><p>Visual Illustrations</p></b>
+								  </div>
+								  <div class="description">
+								    <p>Just things I <b>enjoyed</b> designing!</p>
+										<br>
+								  </div>
+								  <div id="final_description" class="description">
+									  <img src="Media/Personal_Projects/tech supremacy.png" style="width:50%; height:50%"><br>
+									  <br>
+									  <p>A poster I made for my committee (Technology Committee for <a href="https://www.berkeley-pbl.com/">Berkeley Phi Beta Lambda</a>) to celebrate the end of the semester.</p>
+									  <br></br>
+									  <img src="Media/Personal_Projects/sticker_finalized.png" style="width:50%; height:50%"><br>
+									  <br>
+									  <p>Illustration of me and my friends (was printed into a sticker)!</p>
+									  <br></br>
+									  <img src="Media/Personal_Projects/tiny's.png" style="width:50%; height:50%"><br>
+								      <br>
+								      <p>A 2D representation of <a href="https://www.tinysnyc.com/">Tiny's and the Bar Upstairs</a> located in New York.</p>
+								      <img src="Media/Personal_Projects/roots.png" style="width:50%; height:50%"><br>
+											<p>A design I created for the prompt <b>"Roots"</b>. It represents the <b>"Roots of Northwood"</b> (Northwood was the high school I attended), and it shows the two sides of a Northwood student: the <b>academic side</b> and the <b>creative side</b>.</p>
+											<br></br>
+											<img src="https://orig00.deviantart.net/5988/f/2016/167/3/d/pixels___animal_squad_by_gaysenpai-da6jbvy.png" style="padding: 20px;">
+											<img src="https://orig00.deviantart.net/93cd/f/2015/311/2/9/pixels___koffve_by_gaysenpai-d9fwu93.gif" style="padding: 20px;">
+											<img src="https://orig00.deviantart.net/9536/f/2015/311/7/1/pixels___brattie_by_gaysenpai-d9fsp9y.gif" style="padding: 20px;"><br>
+											<p>Pixel art!</p><br></br>
+										<img src="Media/Personal_Projects/How Much Time Do We Have.png" style="width:50%; height:50%"><br>
+									  <br></br>
+								      <p>Graphic for Back to School Yearbook Page</p>
+								      <img src="Media/Personal_Projects/Suitcase.png" style="width:50%; height:50%">
+								      <br></br>
+								      <p>Graphic for Girls' Soccer Yearbook Page</p>
+								  </div>
+								</div>
+						</div>
+	        </div>
+	      </div>
+			</div>
+		</section>
+		<section id="photography_slide" data-transition='wipe_right'>
+			<div class='easytransitions_navigation'>
+	      <div class='easytransitions_navigation__left'>
+	        <i class='icon ion-arrow-left-c'></i>
+	      </div>
+	      <!-- <div class='easytransitions_navigation__right'>
+	        <i class='icon ion-arrow-right-c'></i>
+	      </div> -->
+	    </div>
+			<div class="center">
+	      <div class="row">
+	        <div class="col">
+						<div class="img_container">
+	          	<img src="Media/Photography_Photos/warmth/IO4A8506.jpg">
+							<div id="modal_5_box" class="overlay modal_button">
+								<p>A collection of photos that showcase how I view Berkeley as my home.
+									<br></br> Click to view this gallery!</p>
+							</div>
+						</div>
+						<div class="header_2">
+							<!-- Trigger/Open The Modal -->
+							<div id="modal_5_text" class="modal_button"><p>Warmth</p></div>
+						</div>
+						<div class="subtitle"><p>BERKELEY AS HOME</p></div>
+						<!-- The Modal -->
+						<div id="modal_5_content" class="modal">
+						  <!-- Modal content -->
+						  <div class="modal-content">
+						    <span class="close">&times;</span>
+								<div class="col">
+									<img src="Media/Photography_Photos/warmth/IO4A8506.jpg" style="width: 75%; padding-top: 50px; padding-left: 70px; padding-bottom: 50px;">
+								</div>
+								<div class="col">
+									<img src="Media/Photography_Photos/warmth/IO4A8503.jpg" style="width: 75%; padding-top: 50px; padding-right: 70px; padding-bottom: 50px;">
+								</div>
+								<div class="col">
+									<img src="Media/Photography_Photos/warmth/IO4A8351.jpg" style="width: 65%; padding-top: 100px; padding-left: 70px; position: relative; left: 40px; padding-bottom: 50px;">
+								</div>
+								<div class="col">
+									<img src="Media/Photography_Photos/warmth/IO4A8398.jpg" style="width: 85%; padding-top: 175px; padding-right: 70px; position: relative; right: 40px; padding-bottom: 125px;">
+								</div>
+								<div class="col">
+									<img src="Media/Photography_Photos/warmth/IO4A8461.jpg" style="width: 75%; padding-top: 100px; padding-left: 70px; padding-bottom: 25px;">
+								</div>
+								<div class="col">
+									<img src="Media/Photography_Photos/warmth/IO4A6880.jpg" style="width: 75%; padding-top: 100px; padding-right: 70px; padding-bottom: 25px;">
+								</div>
+							</div>
+						</div>
+					</div>
+	        <div class="col">
+						<div class="img_container">
+	          	<img src="Media/Photography_Photos/mood/IO4A7045.jpg">
+							<div id="modal_6_box" class="overlay modal_button">
+								<p>It's okay to have mood swings. We're human after all.
+									<br></br> Click to view this gallery!</p>
+							</div>
+						</div>
+						<div class="header_2">
+							<!-- Trigger/Open The Modal -->
+							<div id="modal_6_text" class="modal_button"><p>Mood</p></div>
+						</div>
+							<div class="subtitle"><p>compliCATed Emotions</p></div>
+							<!-- The Modal -->
+							<div id="modal_6_content" class="modal">
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<div class="col">
+										<img src="Media/Photography_Photos/mood/IO4A7027.jpg" style="width: 75%; padding-top: 50px; padding-left: 70px; padding-bottom: 50px;">
+									</div>
+									<div class="col">
+										<img src="Media/Photography_Photos/mood/IO4A7045.jpg" style="width: 75%; padding-top: 50px; padding-right: 70px; padding-bottom: 50px;">
+									</div>
+									<img src="Media/Photography_Photos/mood/IO4A7025.jpg" style="width: 70%; padding-top: 100px; margin: auto; padding-bottom: 25px;">
+								</div>
+						</div>
+	        </div>
+					<div class="col">
+						<div class="img_container">
+	          	<img src="Media/Photography_Photos/travel/IO4A7882.jpg">
+							<div id="modal_7_box" class="overlay modal_button">
+								<p>Great things never came from comfort zones. Go out and explore!
+									<br></br> Click to view this gallery!</p>
+							</div>
+						</div>
+						<div class="header_2">
+							<!-- Trigger/Open The Modal -->
+							<div id="modal_7_text" class="modal_button"><p>Travel</p></div>
+						</div>
+							<div class="subtitle"><p>let's go on a journey!</p></div>
+							<!-- The Modal -->
+							<div id="modal_7_content" class="modal">
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<div class="col">
+										<img src="Media/Photography_Photos/travel/IO4A8318.jpg" style="width: 75%; padding-top: 50px; padding-left: 70px; padding-bottom: 50px;">
+									</div>
+									<div class="col">
+										<img src="Media/Photography_Photos/travel/IO4A7882.jpg" style="width: 75%; padding-top: 50px; padding-right: 70px; padding-bottom: 50px;">
+									</div>
+									<img src="Media/Photography_Photos/travel/IO4A7901.jpg" style="width: 70%; padding-top: 100px; margin: auto; padding-bottom: 50px;">
+									<div class="col">
+										<img src="Media/Photography_Photos/travel/IO4A7791.jpg" style="width: 75%; padding-top: 50px; padding-left: 70px; padding-bottom: 50px;">
+									</div>
+									<div class="col">
+										<img src="Media/Photography_Photos/travel/IO4A7794.jpg" style="width: 75%; padding-top: 50px; padding-right: 70px; padding-bottom: 50px;">
+									</div>
+									<img src="Media/Photography_Photos/travel/IO4A8162.jpg" style="width: 30%; padding-top: 50px; margin: auto; padding-bottom: 25px;">								</div>
+						</div>
+	        </div>
+	      </div>
+			</div>
+		</section>
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="index.js"></script>
+</body>
+</html>
