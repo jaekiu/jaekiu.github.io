@@ -192,7 +192,7 @@ li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: 75vh;
     width: 100vw;
 }
 
@@ -236,7 +236,7 @@ footer > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 75vh;
     width: 100vw;
     box-sizing: border-box;
     padding: 0 100px;
@@ -263,7 +263,7 @@ footer > div {
 .portfolio-container {
     text-align: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 75vh;
     padding: 40vh 0;
 }
 
@@ -272,7 +272,7 @@ footer > div {
     .nav-ul {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
     }
 
     .nav-ul li a {
@@ -281,8 +281,13 @@ footer > div {
 
     .nav-ul.show {
         display: flex;
+        width: 100vw;
         max-height: 240px;
         transition: max-height 1s ease-in-out;
+    }
+    
+    header.show {
+        box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.1);
     }
 
     .menu, .hamburger, .hamburger::before, .hamburger::after {
@@ -293,13 +298,23 @@ footer > div {
         max-height: none;
     }
 
-    .container {
+    .container,
+    .about-container {
         display: block;
     }
 
-    .container > .left-col, .container > .right-col {
+    .about-container {
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .container > .left-col, .container > .right-col,
+    .about-container > .left-col, .about-container > .right-col {
+        box-sizing: border-box;
+        text-align: center;
         width: 100%;
         padding: 5% 15% 0% 15%;
     }
+    
     
 }

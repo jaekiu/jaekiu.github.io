@@ -21,16 +21,19 @@ button.addEventListener('mouseleave', leaveButton, false);
 
 const menuBtn = document.querySelector('.menu');
 const navUl = document.querySelector('.nav-ul');
+const header = document.querySelector('header')
 
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
     if (!menuOpen) {
         menuBtn.classList.add('open');
         navUl.classList.add('show');
+        header.classList.add('show');
         menuOpen = true;
     } else {
         menuBtn.classList.remove('open');
         navUl.classList.remove('show');
+        header.classList.remove('show');
         menuOpen = false;
     }
 })
