@@ -1,3 +1,7 @@
+$(window).on("load",function(){
+    $(".spinner-wrapper").fadeOut("slow");
+});
+
 var menuBtn = document.querySelector('.menu');
 var navUl = document.querySelector('.nav-ul');
 var header = document.querySelector('header')
