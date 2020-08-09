@@ -274,13 +274,14 @@ footer > div {
 .card {
     margin: 25px 0;
     width: 30%;
-    transition: 0.7s;
+    transition: 0.5s;
     border: 1px solid #cbcbcb;
     border-radius: 10px;
 }
 
 .card:hover {
-    box-shadow: 2px 2px 8px 0 #dfdfdf;
+    transform: scale(1.04);
+    box-shadow: 2px 2px 12px 0 #cbcbcb;
 }
 
 .card > .card-img {
