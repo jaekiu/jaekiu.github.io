@@ -226,7 +226,7 @@ footer {
 footer > div {
     position: absolute;
     text-align: center;
-    bottom: 5px;
+    bottom: 10px;
     width: 100%;
     color: #959595;
     font-size: 10px;
@@ -261,12 +261,59 @@ footer > div {
 }
 
 .portfolio-container {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+    flex-wrap: wrap;
     width: 100vw;
+    box-sizing: border-box;
+    padding: 5px 70px;
     min-height: 75vh;
-    padding: 40vh 0;
 }
 
+.card {
+    margin: 25px 0;
+    width: 30%;
+    height: 300px;
+    transition: 0.7s;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 8px 0 #dfdfdf;
+}
+
+.card > .card-img {
+    height: 55%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card > .card-img > img {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;
+    border-radius: 9px 9px 0 0;
+}
+
+.card > .card-content {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center; 
+    text-align: left; 
+    height: 45%;
+    padding: 2px 16px;
+}
+
+.card-heading {
+    margin: 0;
+    font-size: 16px;
+    padding: 0 0 8px 0;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
 
 @media screen and (max-width: 767px) {
     .nav-ul {
@@ -318,6 +365,10 @@ footer > div {
 
     .container > .right-col > img {
         width: 75%;
+    }
+
+    .portfolio-container > .card {
+        width: 100%;
     }
     
 }
