@@ -356,7 +356,8 @@ footer > div {
     }
 
     .container > .left-col, .container > .right-col,
-    .about-container > .left-col, .about-container > .right-col {
+    .about-container > .left-col, .about-container > .right-col,
+    .portfolio-container {
         box-sizing: border-box;
         text-align: center;
         width: 100%;
